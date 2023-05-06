@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1000px) {
+    .burger {
+        display: block;
+    }
+
+    .buttonsContainer {
+        position: absolute;
+        right: 0;
+        top: 50px;
+
+        transform: translate(100%);
+        height: calc(100vh - 50px);
+        width: 60vw;
+        font-size: 2rem;
+
+        background-color: var(--nav-color);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .buttonsContainer,
+    .textLinks {
+        align-items: center;
+        font-size: inherit;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .textLinks,
+    .iconLinks {
+        font-size: 2.2rem;
+    }
+
+    .buttonsContainer>button {
+        background-color: transparent;
+        border: none;
+        color: var(--text);
+        font-size: 30px;
+
+        display: block;
+    }
+
+    article>.photoContainer {
+        flex-direction: column;
+    }
+
+    main>article p {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .buttonsContainer {
+        width: 100vw;
+    }
+}

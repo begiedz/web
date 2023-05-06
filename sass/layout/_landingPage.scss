@@ -1,0 +1,121 @@
+header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello {
+    opacity: 0;
+    font-size: 6rem;
+    font-weight: 400;
+    color: var(--accent);
+    font-family: "Pacifico", cursive;
+    line-height: 1;
+
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+
+    width: 500px;
+
+    opacity: 0;
+
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+header>h2 {
+    font-weight: 400;
+    color: gray;
+
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.intervalWrapper {
+    position: relative;
+
+    margin: 1rem;
+    width: 250px;
+
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    transition: 250ms;
+}
+
+.interval {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    transition: ease-in-out 250ms;
+    color: transparent;
+    text-align: center;
+}
+
+.show {
+    color: var(--text);
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 250ms;
+    filter: blur(3px);
+
+}
+
+.unhidden {
+    opacity: 1;
+    filter: none;
+}
+
+.arrowDown {
+    position: absolute;
+    bottom: 5px;
+
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    opacity: 0;
+
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+a i {
+    color: white;
+}

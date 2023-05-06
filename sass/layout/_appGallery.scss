@@ -1,0 +1,55 @@
+.appGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appGallery a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 300px;
+    overflow: hidden;
+
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 250ms;
+}
+
+.appGallery a img {
+    width: 300px;
+}
+
+.appGallery a:hover {
+    scale: 1.1;
+}
+
+.appWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flexCenter a {
+    color: var(--accent);
+}
+
+.flexCenter a:visited {
+    column-rule-color: var(--accent2);
+}
+
+.flexCenter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}

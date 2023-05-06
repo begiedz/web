@@ -1,0 +1,33 @@
+@keyframes bgMove {
+    0% {
+        background-size: 120px 120px;
+    }
+
+    100% {
+        background-size: 60px 60px;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes navAnimation {
+    0% {
+        opacity: 0;
+        top: -50px;
+        border-radius: 50px;
+    }
+
+    100% {
+        opacity: 100;
+        top: 0;
+        border-radius: 0;
+    }
+}

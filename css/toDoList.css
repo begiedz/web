@@ -1,0 +1,312 @@
+:root {
+    --bg: rgb(239, 239, 239);
+    --ligthBG: white;
+    --ligth1: rgb(225, 225, 225);
+    --light-transparent: rgba(255, 255, 255, 0.75);
+    --accent: royalblue;
+    --accent2: #1f49c7;
+    --shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.301);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+div.bgdzReturnButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    bottom: 100px;
+    left: 50px;
+
+    height: 50px;
+    width: 50px;
+
+    font-size: 1.8rem;
+
+    background-color: black;
+
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 0 gray;
+
+    cursor: pointer;
+
+    transition: ease-in-out 250ms;
+}
+
+div.bgdzReturnButton a {
+    color: white;
+    text-decoration: none;
+}
+
+div.bgdzReturnButton:hover {
+    scale: 0.98;
+    box-shadow: 2px 2px 0 0 gray;
+}
+
+div.bgdzReturnButton:active {
+    background-color: gray;
+}
+
+nav.upperNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    position: fixed;
+    width: 100vw;
+
+    width: 100vw;
+    padding: 10px 15px;
+    background-color: var(--light-transparent);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: var(--shadow)
+}
+
+nav.upperNav form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-self: flex-start;
+}
+
+nav.upperNav input {
+    width: inherit;
+    max-width: inherit;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 1.1rem;
+    background-color: var(--ligth1);
+}
+
+nav.upperNav form button {
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+
+    /* background-color: var(--ligth1); */
+    background-color: transparent;
+    color: var(--accent);
+
+    cursor: pointer;
+}
+
+.sortAlphButton {
+    justify-self: end;
+
+    border: none;
+    background-color: transparent;
+    color: var(--accent);
+
+    cursor: pointer;
+}
+
+.sortButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.sortDateButton {
+    justify-self: end;
+
+    border: none;
+    background-color: transparent;
+    color: var(--accent);
+
+    cursor: pointer;
+}
+
+.margin {
+    margin: 40px 0px;
+}
+
+form.header {
+    justify-self: flex-start;
+    font-size: 1.5rem;
+    color: var(--accent)
+}
+
+
+form.header input {
+    width: 90vw;
+
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+    outline: none;
+
+    color: inherit;
+    background-color: transparent;
+
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 10px 20px 10px;
+    width: 95%;
+    max-width: 1024px;
+}
+
+li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 1.1rem;
+
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: var(--shadow);
+
+    transition: 400ms ease-in;
+    opacity: 0;
+}
+
+li input[type=checkbox] {
+    transition: 200ms;
+    accent-color: var(--accent);
+}
+
+li input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+li form {
+    flex: 1;
+}
+
+li form textarea {
+    display: block;
+
+    height: 1.2rem;
+    overflow: hidden;
+    resize: none;
+
+    min-width: 0px;
+    min-height: 0px;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
+
+li input[type=checkbox]:checked+form textarea {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+li button {
+    padding: 9px;
+    font-size: inherit;
+    border: none;
+    border-radius: 10px;
+    color: lightgray;
+    background-color: transparent;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: var(--accent);
+}
+
+li button:active {
+    color: var(--accent2);
+    scale: 95%;
+}
+
+li button.deleteButton {
+    color: lightgray;
+    background-color: transparent;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+li button.deleteButton:hover {
+    color: crimson;
+}
+
+li button.deleteButton:active {
+    color: rgb(200, 17, 54);
+    scale: 95%;
+}
+
+/*      Bottom navigation with input         */
+
+.bottomNav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 4rem;
+
+    padding: 10px;
+    border-top: 2px solid lightgray;
+    background-color: var(--light-transparent);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.mainInput {
+    flex: 6;
+
+    width: 0;
+    height: 3rem;
+    padding: 0 10px 0 10px;
+    font-size: 1.1rem;
+
+    border-radius: 10px;
+    border: none;
+    background-color: var(--ligthBG);
+    background-color: var(--ligth1);
+}
+
+.addButton {
+    flex: 1;
+    font-size: 1.1rem;
+    height: 3rem;
+
+    font-weight: 700;
+
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: var(--accent);
+
+    cursor: pointer;
+}
+
+.addButton:active {
+    scale: 95%;
+    background-color: var(--accent2);
+}
