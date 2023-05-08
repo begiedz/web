@@ -21,13 +21,21 @@ body {
     background-image: radial-gradient(gray 1px, transparent 0);
     background-size: 60px 60px;
     background-position: top;
-    overflow-x: hidden;
 
     animation-name: bgMove;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-delay: 0s;
+}
+
+
+/* Fix Safari overflow issue */
+html,
+body {
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
 }
 
 a:link {

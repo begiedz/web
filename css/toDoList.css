@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -76,7 +76,7 @@ nav.upperNav {
     background-color: var(--light-transparent);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
 }
 
 nav.upperNav form {
@@ -142,11 +142,10 @@ nav.upperNav form button {
 }
 
 form.header {
-    justify-self: flex-start;
+    padding: 2rem; /* to delete after upperNav repair */
     font-size: 1.5rem;
-    color: var(--accent)
+    color: var(--accent);
 }
-
 
 form.header input {
     width: 90vw;
@@ -188,12 +187,12 @@ li {
     opacity: 0;
 }
 
-li input[type=checkbox] {
+li input[type="checkbox"] {
     transition: 200ms;
     accent-color: var(--accent);
 }
 
-li input[type=checkbox]:hover {
+li input[type="checkbox"]:hover {
     cursor: pointer;
 }
 
@@ -215,7 +214,7 @@ li form textarea {
     outline: none;
 }
 
-li input[type=checkbox]:checked+form textarea {
+li input[type="checkbox"]:checked + form textarea {
     opacity: 0.5;
     text-decoration: line-through;
 }

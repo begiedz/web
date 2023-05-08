@@ -21,7 +21,7 @@ let codeLength = 10;
 const codes = [];
 
 
-/* stworzenie zmiennej divs która stanie się nodelistą potrzebną do usunięcia elementów z documentu. Będzie gormadzić divy z kodami stworzone na stronie */
+/* stworzenie zmiennej divs która stanie się nodelistą potrzebną do usunięcia elementów z dokumentu. Będzie gormadzić divy z kodami stworzone na stronie */
 let divs;
 
 /* zmienna boolean która zablokuje nam możliwość generacji kolejnych kodów, potrzebna do ifa.
