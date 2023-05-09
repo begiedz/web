@@ -39,6 +39,10 @@
         display: block;
     }
 
+    .arrowDown {
+        scale: 1.5;
+    }
+
     article>.photoContainer {
         flex-direction: column;
     }
