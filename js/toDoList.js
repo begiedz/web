@@ -216,7 +216,7 @@ addNote = (e) => {
         });
         ul.appendChild(build);
     }
-    sortAlphButton.addEventListener('click', sortNotes);
+    // sortAlphButton.addEventListener('click', sortNotes);
 }
 
 nameList = (e) => {
@@ -241,6 +241,6 @@ function search(e) {
 
 }
 
-searchForm.addEventListener('input', search);
+// searchForm.addEventListener('input', search);
 header.addEventListener('submit', nameList);
 addButton.addEventListener('click', addNote);

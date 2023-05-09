@@ -28,7 +28,7 @@ div.bgdzReturnButton {
     align-items: center;
     justify-content: center;
 
-    position: absolute;
+    position: fixed;
 
     bottom: 100px;
     left: 50px;
@@ -37,29 +37,27 @@ div.bgdzReturnButton {
     width: 50px;
 
     font-size: 1.8rem;
-
-    background-color: black;
-
+    background-color: royalblue;
+    outline: 0 solid transparent;
     border-radius: 5px;
-    box-shadow: 4px 4px 0 0 gray;
-
     cursor: pointer;
-
     transition: ease-in-out 250ms;
 }
 
 div.bgdzReturnButton a {
     color: white;
     text-decoration: none;
+    user-select: none;
 }
 
 div.bgdzReturnButton:hover {
-    scale: 0.98;
-    box-shadow: 2px 2px 0 0 gray;
+    outline: 3px solid royalblue;
+    outline-offset: 3px;
 }
 
 div.bgdzReturnButton:active {
-    background-color: gray;
+    scale: 0.98;
+    background-color: #1f49c7;
 }
 
 nav.upperNav {

@@ -1,102 +1,104 @@
 html {
-  font-family: monospace;
+    font-family: monospace;
 }
 body {
-  background-color: #333;
+    background-color: #333;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  color: white;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    color: white;
 }
 form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
-  width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    width: 100vw;
 
-  gap: 0.5rem;
+    gap: 0.5rem;
 }
 input {
-  width: 3rem;
-  /* background-color: #333; */
+    width: 3rem;
+    /* background-color: #333; */
 }
 label {
-  width: 9rem;
-  color: white;
+    width: 9rem;
+    color: white;
 }
 .generator,
 .reset {
-  display: block;
-  margin: 50px auto 50px;
-  background-color: royalblue;
-  border: 5px solid rgb(44, 72, 158);
-  padding: 20px 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border-radius: 15px;
-  font-weight: 700;
-  font-family: inherit;
+    display: block;
+    margin: 50px auto 50px;
+    background-color: royalblue;
+    border: 5px solid rgb(44, 72, 158);
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 700;
+    font-family: inherit;
 }
 .quantityButton,
 .lengthButton {
-  padding: 5px;
-  background-color: royalblue;
-  border: 2px solid rgb(44, 72, 158);
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
+    padding: 5px;
+    background-color: royalblue;
+    border: 2px solid rgb(44, 72, 158);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button:active {
-  transform: scale(0.98);
-  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.24);
+    transform: scale(0.98);
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.24);
 }
 
 div {
-  margin: 10px;
-  font-size: 3rem;
+    margin: 10px;
+    font-size: 3rem;
+    color: white;
 }
 
 div.bgdzReturnButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  position: absolute;
+    position: fixed;
 
-  bottom: 100px;
-  left: 50px;
+    bottom: 100px;
+    left: 50px;
 
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
 
-  font-size: 1.8rem;
-
-  background-color: black;
-
-  border-radius: 5px;
-  box-shadow: 4px 4px 0 0 gray;
-
-  cursor: pointer;
-
-  transition: ease-in-out 250ms;
+    font-size: 1.8rem;
+    background-color: royalblue;
+    outline: 0 solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out 250ms;
+    font-family: sans-serif;
 }
 
 div.bgdzReturnButton a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    user-select: none;
 }
 
 div.bgdzReturnButton:hover {
-  scale: 0.98;
-  box-shadow: 2px 2px 0 0 gray;
+    outline: 3px solid royalblue;
+    outline-offset: 3px;
 }
 
 div.bgdzReturnButton:active {
-  background-color: gray;
+    scale: 0.98;
+    background-color: #1f49c7;
 }
