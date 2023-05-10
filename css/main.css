@@ -71,6 +71,18 @@ footer {
   font-family: monospace;
 }
 
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 150ms;
+  filter: blur(3px);
+}
+
+.unhidden {
+  opacity: 1;
+  filter: none;
+}
+
 .mainNav {
   position: fixed;
   display: flex;
@@ -278,18 +290,6 @@ header > h2 {
 
 .show {
   color: var(--text);
-}
-
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-  transition-delay: 250ms;
-  filter: blur(3px);
-}
-
-.unhidden {
-  opacity: 1;
-  filter: none;
 }
 
 .arrowDown {
