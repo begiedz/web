@@ -23,14 +23,12 @@
     z-index: 2;
 }
 
-
-
 .logoContainer {
     display: flex;
     height: 50px;
 }
 
-.logoContainer>a {
+.logoContainer > a {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -46,7 +44,7 @@
     fill: var(--accent);
 }
 
-.logoContainer>i {
+.logoContainer > i {
     display: flex;
     align-self: center;
 }
@@ -74,13 +72,13 @@
     font-size: 1.1rem;
 }
 
-.textLinks>a {
+.textLinks > a {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-.iconLinks>a,
-.textLinks>a {
+.iconLinks > a,
+.textLinks > a {
     position: relative;
 
     color: inherit;
@@ -91,7 +89,7 @@
     transition: 250ms;
 }
 
-.iconLinks>button {
+.iconLinks > button {
     position: relative;
 
     background-color: transparent;
@@ -101,9 +99,9 @@
     cursor: pointer;
 }
 
-.iconLinks>a::after,
-.iconLinks>button::after,
-.textLinks>a::after {
+.iconLinks > a::after,
+.iconLinks > button::after,
+.textLinks > a::after {
     content: "";
 
     position: absolute;
@@ -120,9 +118,9 @@
     transition: ease-in-out 250ms;
 }
 
-.iconLinks>a:hover::after,
-.iconLinks>button:hover::after,
-.textLinks>a:hover::after {
+.iconLinks > a:hover::after,
+.iconLinks > button:hover::after,
+.textLinks > a:hover::after {
     scale: 1;
 }
 

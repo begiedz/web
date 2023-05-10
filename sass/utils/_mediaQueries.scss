@@ -30,7 +30,7 @@
         font-size: 2.2rem;
     }
 
-    .buttonsContainer>button {
+    .buttonsContainer > button {
         background-color: transparent;
         border: none;
         color: var(--text);
@@ -43,11 +43,11 @@
         scale: 1.5;
     }
 
-    article>.photoContainer {
+    article > .photoContainer {
         flex-direction: column;
     }
 
-    main>article p {
+    main > article p {
         text-align: justify;
     }
 }

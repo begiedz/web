@@ -2,14 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
-@import 'utils/variables';
+@import "utils/variables";
 
-@import 'layout/general';
-@import 'layout/navigation';
-@import 'layout/landingPage';
-@import 'layout/mainContent';
-@import 'layout/appGallery';
+@import "layout/general";
+@import "layout/navigation";
+@import "layout/landingPage";
+@import "layout/mainContent";
+@import "layout/appGallery";
 
-@import 'utils/mediaQueries';
+@import "utils/mediaQueries";
 
-@import 'utils/keyframes'
+@import "utils/keyframes";
