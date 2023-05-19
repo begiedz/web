@@ -461,6 +461,9 @@ main ul li {
   }
 }
 @media only screen and (max-width: 760px) {
+  .mainNav {
+    padding: 0 20px;
+  }
   .buttonsContainer {
     width: 100vw;
   }

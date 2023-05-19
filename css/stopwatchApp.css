@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+    font-size: 3rem;
+    color: white;
+    background-color: black;
+}
+
+.stopwatchApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.stopwatchApp .timeDisplay {
+    margin: 40px 0 20px;
+    display: flex;
+    align-items: center;
+}
+.stopwatchApp .buttonWrapper {
+    display: flex;
+    gap: 40px;
+}
+.stopwatchApp .buttonWrapper button {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.output {
+    margin-top: 20px;
+    height: 70vh;
+    width: auto;
+    overflow-x: scroll;
+    margin-bottom: 10%;
+}
+
+.output div {
+    display: flex;
+    direction: column;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.lapStopwatch {
+    color: #ffa500;
+    background-color: rgba(255, 166, 0, 0.5);
+    border: 2px solid orange;
+    transition: ease-in-out 250ms;
+    cursor: pointer;
+}
+
+.lapStopwatch:hover {
+    color: #e69500;
+    background-color: rgba(230, 150, 0, 0.5);
+    border: 2px solid #e69500;
+}
+
+.lapStopwatch:active {
+    color: #cc8500;
+    background-color: rgba(204, 133, 0, 0.5);
+    border: 2px solid #cc8500;
+}
+
+button.startStopwatch {
+    color: #008000;
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 2px solid green;
+    transition: ease-in-out 250ms;
+    cursor: pointer;
+}
+
+button.startStopwatch:hover {
+    color: #006600;
+    background-color: rgba(0, 102, 0, 0.5);
+    border: 2px solid #006600;
+    cursor: pointer;
+}
+
+button.startStopwatch:active {
+    color: #004d00;
+    background-color: rgba(0, 77, 0, 0.5);
+    border: 2px solid #004d00;
+    cursor: pointer;
+}
+
+.red {
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 2px solid red;
+}
+
+.red:hover {
+    color: #e60000;
+    background-color: rgba(230, 0, 0, 0.5);
+    border: 2px solid #e60000;
+}
+
+.red:active {
+    color: #cc0000;
+    background-color: rgba(204, 0, 0, 0.5);
+    border: 2px solid #cc0000;
+}
+
+div.bgdzReturnButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+
+    bottom: 100px;
+    left: 50px;
+
+    height: 50px;
+    width: 50px;
+
+    font-size: 1.8rem;
+    background-color: royalblue;
+    outline: 0 solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out 250ms;
+    font-family: sans-serif;
+}
+
+div.bgdzReturnButton a {
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+div.bgdzReturnButton:hover {
+    outline: 3px solid royalblue;
+    outline-offset: 3px;
+}
+
+div.bgdzReturnButton:active {
+    scale: 0.98;
+    background-color: #1f49c7;
+}

@@ -21,7 +21,7 @@ setTimeout(() => {
     function changeTextTime() {
         switch (txtIndex) {
             case 0:
-                languages[4].classList.remove("show");
+                languages[5].classList.remove("show");
                 languages[0].classList.add("show");
                 break;
             case 1:
@@ -42,12 +42,16 @@ setTimeout(() => {
                 languages[3].classList.remove("show");
                 languages[4].classList.add("show");
                 break;
+            case 5:
+                languages[4].classList.remove("show");
+                languages[5].classList.add("show");
+                break;
             default:
                 languages[0].classList.add("show");
                 break;
         }
         // console.log(languages[txtIndex].textContent);
-        if (txtIndex < 4) {
+        if (txtIndex < 5) {
             txtIndex++;
         } else {
             txtIndex = 0;
